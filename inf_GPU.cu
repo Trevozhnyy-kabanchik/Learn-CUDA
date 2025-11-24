@@ -35,6 +35,8 @@ deviceProp.multiProcessorCount);
 printf("Kernel execution timeout enabled: %s\n",
 deviceProp.kernelExecTimeoutEnabled ? "true" :
 "false");
+printf("Device has Compute Capability %d.%d\n",
+deviceProp.major, deviceProp.minor);
 scanf("");
 return 0;
 }
